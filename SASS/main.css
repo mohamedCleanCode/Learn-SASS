@@ -1,0 +1,43 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact {
+  padding: 20px;
+}
+
+.box, .header {
+  color: red;
+}
+
+.header {
+  color: green;
+}
+
+.parent {
+  font-size: 5px;
+}
+.parent .child {
+  font-weight: bold;
+}
+.parent .g-child {
+  padding: 10px;
+}
+
+.parent-one, .parent-two {
+  padding: 10px;
+}
+.parent-one .child-one, .parent-one .child-two, .parent-two .child-one, .parent-two .child-two {
+  color: red;
+}
+
+.page {
+  background-color: #444;
+  color: white;
+}
+
+.box {
+  border-radius: 6px;
+}
+/*# sourceMappingURL=main.css.map */

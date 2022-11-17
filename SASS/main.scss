@@ -1,0 +1,49 @@
+// Import Global Rules
+@use './sass/layout/global-rules';
+// Import Pages
+@use './sass/pages/contact';
+
+$alt_color: green;
+%main-box {
+    color: red;
+}
+.header {
+    color: $alt_color;
+    @extend %main-box;
+}
+.parent {
+    font-size: 5px;
+    .child {
+        font-weight: bold;
+    }
+    .g-child {
+        padding: 10px;
+    }
+}
+.parent-one, .parent-two {
+    padding: 10px;
+    .child-one, .child-two {
+        color: red;
+    }
+}
+
+// Control Flow
+
+$them : 'dark';
+
+.page {
+    @if $them == 'light' {
+        background-color: white;
+        color: #444;
+    } @else {
+        background-color: #444;
+        color: white;
+    }
+}
+
+$rounde: true;
+
+.box {
+    @extend %main-box;
+    border-radius: if($rounde, 6px, null);
+}
